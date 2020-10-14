@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+
+<androidx.drawerlayout.widget.DrawerLayout
+    xmlns:map="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/drawer_layout"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.google.android.material.appbar.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/main_toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:background="@android:color/white"
+                />
+
+        </com.google.android.material.appbar.AppBarLayout>
+
+        <EditText
+            android:id="@+id/location_search"
+            android:layout_width="300dp"
+            android:layout_height="61dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="65dp"
+            android:ems="10"
+            android:hint="search here..." />
+
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+
+
+
+
+    <RelativeLayout
+        android:layout_height="match_parent"
+        android:layout_width="match_parent">
+
+
+
+        <ImageButton
+            android:id="@+id/search_address"
+            android:layout_width="91dp"
+            android:layout_height="55dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="65dp"
+            android:onClick="onClick"
+            android:scaleType="fitCenter"
+            android:src="@mipmap/search" />
+
+
+    </RelativeLayout>
+
+    <fragment
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="130dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        tools:context=".MapsActivity" />
+
+    <RelativeLayout
+        android:id="@+id/second_relative_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageButton
+            android:id="@+id/cafe"
+            android:layout_width="87dp"
+            android:layout_height="59dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="38dp"
+            android:layout_marginLeft="38dp"
+            android:layout_marginBottom="15dp"
+            android:onClick="onClick"
+            android:scaleType="fitCenter"
+            android:src="@mipmap/cafe">
+
+        </ImageButton>
+
+
+    </RelativeLayout>
+
+
+    <com.google.android.material.navigation.NavigationView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:menu="@menu/nav_menu"
+        android:id="@+id/nav_view"
+        android:layout_gravity="start"/>
+</androidx.drawerlayout.widget.DrawerLayout>
+
+
+
+
+
+

@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">CafeSearch</string>
+    <string name="title_activity_maps">Map</string>
+
+    <string name="OpenNavDrawer">Navigation Drawer open</string>
+    <string name="CloseNavDrawer">Navigation Drawer close</string>
+</resources>
