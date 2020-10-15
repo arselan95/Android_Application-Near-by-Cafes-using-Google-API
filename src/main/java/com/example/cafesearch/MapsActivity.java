@@ -258,7 +258,7 @@ public class MapsActivity extends AppCompatActivity implements
         //googleURL.append("&radius=" + ProximityRadius);
 
         // googleURL.append("&sensor=true");
-        googleURL.append("&key=" + "AIzaSyBDkf4Dt1xdiRMj1iSdMfeVQosoFVoLmj8");
+        googleURL.append("&key=" + "API_KEY");
 
         Log.d("MapsActivity", "url = " + googleURL.toString());
 
@@ -279,7 +279,7 @@ public class MapsActivity extends AppCompatActivity implements
         googleURL.append("&radius=" + ProximityRadius);
         googleURL.append("&type=" + nearbycafe);
         googleURL.append("&sensor=true");
-        googleURL.append("&key=" + "AIzaSyBDkf4Dt1xdiRMj1iSdMfeVQosoFVoLmj8");
+        googleURL.append("&key=" + "API_KEY");
 
         Log.d("MapsActivity", "url = " + googleURL.toString());
 
