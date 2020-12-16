@@ -68,24 +68,3 @@ Near by Cafe</h1><br>
 
 
 
-![Screenshot](2.png)
-
-
-<h3>Add</h3><br>
-
-![Screenshot](3.png)
-
-![Screenshot](6.png)
-
-
-<h3>Nav Bar</h3><br>
-
-![Screenshot](4.png)
-
-![Screenshot](5.png)
-
-
-
-
-
-
